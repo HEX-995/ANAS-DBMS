@@ -1,0 +1,33 @@
+Simple SQL CRUD Web Interface
+
+Tech Stack
+- Backend: Node.js + Express (JavaScript)
+- Database: SQLite (SQL)
+- Frontend: HTML, CSS, JavaScript
+
+Features
+- Insert user data
+- Update existing user data
+- Delete user data
+- Show all user data
+
+Project Files
+- server.js
+- templates/index.html
+- static/style.css
+- static/app.js
+- package.json
+
+How to Run
+1. Open terminal in this folder.
+2. Install dependencies:
+   npm install
+3. Start app:
+   npm start
+4. Open browser:
+   http://127.0.0.1:5000
+
+Database
+- SQLite file is created automatically as app.db.
+- Table name: users
+- Columns: id, name, email, phone

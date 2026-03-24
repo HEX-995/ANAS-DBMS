@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "defines": [],
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "macos-clang-arm64",
+            "compilerPath": "/usr/bin/clang++",
+            "macFrameworkPath": [
+                "/Users/dilshad/safe_coding/include/bits"
+            ],
+            "recursiveIncludes": {
+                "order": "depthFirst"
+            }
+        }
+    ],
+    "version": 4
+}

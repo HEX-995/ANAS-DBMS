@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaction Status - PayFlow</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="hero">
+        <h1>Transaction Successful</h1>
+        <p>Your payment has been processed.</p>
+      </header>
+
+      <section class="card transaction-card">
+        <h2>Transaction Details</h2>
+        <div id="transactionDetails" class="detail-list"></div>
+        <div class="transaction-actions">
+          <a
+            class="btn link-btn"
+            href="https://www.onlinesbi.sbi/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Proceed to Bank Site</a
+          >
+          <a class="btn secondary-btn" href="index.html">Back to Payments</a>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const detailsElement = document.getElementById("transactionDetails");
+      const rawTransaction = localStorage.getItem("latestTransaction");
+
+      if (!rawTransaction) {
+        detailsElement.innerHTML =
+          "<p class='empty'>No transaction data found.</p>";
+      } else {
+        const transaction = JSON.parse(rawTransaction);
+        detailsElement.innerHTML = `
+          <p><strong>Transaction ID:</strong> ${transaction.transactionId}</p>
+          <p><strong>Name:</strong> ${transaction.fullName}</p>
+          <p><strong>Email:</strong> ${transaction.email}</p>
+          <p><strong>Amount:</strong> ${transaction.currency} ${transaction.amount}</p>
+          <p><strong>Method:</strong> ${transaction.method}</p>
+          <p><strong>Time:</strong> ${transaction.now}</p>
+          <p><strong>Status:</strong> <span class="badge success">Success</span></p>
+        `;
+      }
+    </script>
+  </body>
+</html>

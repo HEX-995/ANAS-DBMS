@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash portfolio</title>
+    <link rel="stylesheet" href="yash.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="leftheader">
+        <h1>Yash Goyal</h1>
+      </div>
+      <nav class="rightheader">
+        <ul>
+          <li><a href="yash.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Experience</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="firstblock">
+      <div class="leftblock1">
+        <h2>Hii visitor.</h2>
+        <p>
+          I am a passionate developer and coding geek interested in developing
+          websites.
+        </p>
+        <a href="file:///Users/dilshad/safe_coding/web/yash.html#" class="button-link">Explore My Profile.</a>
+      </div>
+      <div class="rightblock1">
+        <img src="_.jpeg" alt="romcom anime lovers" />
+      </div>
+    </div>
+
+
+    <div class="slideshow-carousel">
+        <div class="carousel fade">
+            <img src="anime-moon-landscape.jpg" alt="projects" />
+        </div>
+        <div class="carousel fade">
+            <img src="beautiful-anime-landscape-cartoon-scene.jpg" alt="education" />
+        </div>
+        <div class="carousel fade">
+            <img src="anime-moon-landscape (1).jpg" alt="experience"/>
+        </div>
+    </div>
+
+  <script>
+  let currentIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    const slides = document.querySelectorAll(".carousel");
+    slides.forEach(slide => {
+      slide.style.display = "none";
+      slide.classList.remove("fade");
+    });
+
+    currentIndex++;
+    if (currentIndex > slides.length) currentIndex = 1;
+
+    slides[currentIndex - 1].style.display = "block";
+    slides[currentIndex - 1].classList.add("fade");
+
+    setTimeout(showSlides, 2000);
+  }
+</script>
+
+  </body>
+</html>

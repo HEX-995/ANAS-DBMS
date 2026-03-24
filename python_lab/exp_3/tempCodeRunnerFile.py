@@ -1,0 +1,1 @@
+sequence=input("enter the sequence: ")

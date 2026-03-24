@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  text-align: center;
+  margin: 10px;
+  background-color: rgb(12, 108, 33);
+  padding:1em;
+}
+.style_1 {
+  background-color: rgb(156, 222, 75);
+  border: 2px solid rgb(234, 219, 4);
+  margin: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.style_2 {
+  background-color: rgb(77, 224, 229);
+  border: 2px solid rgb(37, 134, 237);
+  margin: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+/* pehle padding,border,margin*/

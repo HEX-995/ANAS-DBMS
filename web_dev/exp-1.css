@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.f1 {
+  justify-content: space-around;
+  background-color: rgb(12, 108, 33);
+  width: 30%;
+  text-align: center;
+  margin: 10px;
+  padding: 1em;
+}
+.full {
+  border: 5px solid red;
+  display: flex;
+  flex-direction: row;
+}

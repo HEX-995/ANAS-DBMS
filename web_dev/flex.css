@@ -1,0 +1,25 @@
+.navbar {
+    gap: 100px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+.navbar li{
+
+    list-style: none;
+    /* float:left; */
+    margin: 10px;
+}
+.search{
+    align-items: center;
+    float:left;
+    margin-right: 100px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

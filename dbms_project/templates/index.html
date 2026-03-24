@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL CRUD Interface</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>SQL CRUD Interface</h1>
+      <p class="subtitle">Insert, update, delete, and show database records.</p>
+
+      <section class="card">
+        <h2 id="form-title">Add User</h2>
+        <form id="user-form">
+          <input type="hidden" id="user-id" />
+
+          <label for="name">Name</label>
+          <input id="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" type="email" required />
+
+          <label for="phone">Phone</label>
+          <input id="phone" type="text" required />
+
+          <label for="image">Image</label>
+          <input id="image" type="file" accept="image/*" />
+          <img
+            id="preview-image"
+            style="max-width: 100px; margin-top: 10px; display: none"
+          />
+
+          <div class="actions">
+            <button type="submit" id="save-btn">Save</button>
+            <button type="button" id="cancel-btn" class="secondary" hidden>
+              Cancel Edit
+            </button>
+          </div>
+        </form>
+        <p id="message" class="message"></p>
+      </section>
+
+      <section class="card">
+        <div class="list-header">
+          <h2>All Users</h2>
+          <button id="refresh-btn" class="secondary">Refresh</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="user-table"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

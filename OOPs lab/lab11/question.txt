@@ -1,0 +1,3 @@
+WAP using catch(...) handler
+wap to demonstrate the concept of rethrowing of exception 
+wap for exception in constructor and destructor 

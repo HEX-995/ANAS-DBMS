@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:rgb(7, 107, 29);
+    text-align:center;
+    line-height: 5em;
+    color: white;
+}
+.box1{
+    text-align: left;
+    padding:1em 0 0 1em;
+}
+.sub_1{
+    line-height: 1.8em;;
+}
+p{
+    font-style: italic;
+    font-size: 1.2em;
+}

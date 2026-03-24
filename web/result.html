@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Page</title>
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="A result page for web projects." />
+    <meta name="keywords" content="HTML, result, template, web development" />
+    <meta name="author" content="Your Name" />
+    <link rel="canonical" href="https://www.example.com/result.html" />
+    <meta property="og:title" content="Result HTML" />
+    <meta property="og:description" content="A result page for web projects." />
+    <meta property="og:image" content="https://www.example.com/image.png" />
+    <meta property="og:url" content="https://www.example.com/result.html" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Result Page</h1>
+    <hr />
+    <div>
+      <form action="backend.php">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" /><br /><br />
+        <label for="roll">Roll No:</label>
+        <input name="rollno" id="roll" /><br /><br />
+        <label for="D.O.B">D.O.B:</label>
+        <input type="date" name="dob" id="D.O.B" /><br /><br />
+        <label for="gend">Gender:</label>
+        <span>Male</span><input type="radio" id="gend" /> 
+        <span>Female</span><input type="radio" id="gend" /> 
+        <span>Other</span><input type="radio" id="gend" /><br /><br />
+        <label for="sem">Semester:</label><select name="semester" id="sem">
+          <option value="1">I</option>
+          <option value="2">II</option>
+          <option value="3">III</option>
+          <option value="4">IV</option>
+          <option value="5">V</option>
+          <option value="6">VI</option>
+          <option value="7">VII</option>
+          <option value="8">VIII</option>
+        </select>
+        <br /><br />
+        <label for="course">Course:</label><select name="course" id="course">
+          <option value="cse_core">CSE(CORE)</option>
+          <option value="cse_ds">CSE(DS)</option>
+          <option value="cse_cy">CSE(CY)</option>
+          <option value="ece">ECE</option>
+          <option value="it">IT</option></select
+        ><br /><br />
+        <input type="submit" value="Submit" id="submit" />
+        <input type="reset" value="Reset" id="reset" />
+        <br /><br />
+      </form>
+    </div>
+  </body>
+</html>
